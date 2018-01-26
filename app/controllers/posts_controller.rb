@@ -8,7 +8,9 @@ class PostsController < ApplicationController
   end
 
   def update
-    @post.title(post_params)
+    @post.title =
+    @post.category =
+    @post.content =
     if @post.valid?
       @post.save
       redirect_to post_path(@post)
